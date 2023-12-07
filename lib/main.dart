@@ -27,7 +27,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final TextEditingController textEditingController = TextEditingController();
 
-  // Step 1: Create your List
+  /// Starting Point
+  ///
+  // Step 1: We Create your List
   List<String> userTodoList = [];
 
   //
@@ -35,7 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
   //
   // Step 2: Add To list
   void addToTheList(String title) {
-    userTodoList.add(title);
+    // Class Work: Check if "title" is an empty string,
+    // If yea, the do not add to the list
+
+    // TODO: add title to list
     setState(() {});
   }
 
@@ -44,9 +49,15 @@ class _MyHomePageState extends State<MyHomePage> {
   //
   // Step 3: Remove from List
   void removeItemFromList(String title) {
-    userTodoList.remove(title);
+    // TODO: remove title to list
+
     setState(() {});
   }
+
+  ///
+  ///
+  /// Ending Point
+  /// 
 
   @override
   Widget build(BuildContext context) {
